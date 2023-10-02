@@ -1,0 +1,28 @@
+# Questão da Calculadora
+
+public class Calculadora {
+
+    private int a, b;
+
+    public Calculadora(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public int soma() {
+        return a + b;
+    }
+
+    public int multiplica() {
+        return a * b;
+    }
+
+    public int divide() {
+        if (b != 0) {
+            return a / b;
+        } else {
+            System.out.println("Erro: Divisão por 0 não permitida.");
+            return -1; 
+        }
+    }
+}
